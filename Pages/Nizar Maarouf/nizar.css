@@ -13,6 +13,12 @@
   grid-gap: 15px;
   padding: 15px;
 }
+.gallery__img {
+    filter:blur(8px)
+}
+.gallery__img:hover {
+    filter:blur(0px)
+}
 
 .gallery__item--1 {
   grid-row: 1 / span 2;
