@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #763857;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 40px;
+  position: relative;
+  background-color: #ffd384;
+  height: 7vw;
+  width: 80%;
+
+  border-radius: 20px;
+}
+h1 {
+  margin-top: 15px;
+  color: #8c0000;
+  text-align: center;
+}
+
+.logo img {
+  height: 50vh;
+   width: 50vw;
+}
+
+.slider {
+  position: relative;
+  left: 9%;
+  bottom: 10%;
+  display: flex;
+  height: 30vw;
+  width: 30vw;
+  position: relative;
+}
+
+.slider .switchRight {
+  position: absolute;
+  right: -45px;
+  top: 45%;
+  color: white;
+  font-weight: 700;
+  height: 25px;
+  width: 45px;
+  line-height: 25px;
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
+  transition-duration: 0.4s;
+}
+.slider .switchLeft {
+  position: absolute;
+  left: -45px;
+  top: 45%;
+  color: white;
+  font-weight: 700;
+  height: 25px;
+  width: 45px;
+  line-height: 25px;
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
+  transition-duration: 0.4s;
+}
+.switchLeft:hover {
+  cursor: pointer;
+}
+.switchRight:hover {
+
+  cursor: pointer;
+}
+
+
+.sliderbox {
+  height: 60vh;
+  width: 50vw;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.sliderbox img {
+  width: 30vw;
+  height: 50vh;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.selectImages {
+  left: -27rem;
+  position: relative;
+  top: 8rem;
+  height: 10px;
+  width: 35vw;
+}
+.imageSelector {
+  margin: 0 10px;
+  cursor: pointer;
+
+}
+
+/* .selectImages input {
+  margin: 0 15px;
+} */
