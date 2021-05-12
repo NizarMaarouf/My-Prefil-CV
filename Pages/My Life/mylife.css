@@ -1,15 +1,13 @@
 
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        margin: var(--header-height) 0 0;
-        font-family: var(--body-font);
-        font-size: var(--normal-font-size);
-        font-weight: var(--font-medium);
-        color: var(--text-color);
-        line-height: 1.6;
-      }
+  html {
+    scroll-behavior: smooth;
+  }
+html{
+  margin: 0;
+  padding: 0;
+  background-color:#99bbad;
+}
+
 
 a {
  text-decoration: none;
@@ -35,7 +33,7 @@ h1 {
   position: relative;
   left:0;
   margin-top: 1rem;
-  color: #2b4f60;
+  color: #e48900;
   text-align: center;
   font-size: 3rem;
 }
@@ -67,7 +65,7 @@ h1 {
   position: absolute;
   left: -45px;
   top: 45%;
-  color: #e40017;
+  color: #e48900;
   font-weight: 700;
   height: 25px;
   width: 45px;
@@ -98,13 +96,13 @@ h1 {
   border-radius: 15px;
 }
 .selectImages {
-  left: 32%;
+  left: 31.5%;
   position: relative;
   top: 1rem;
   height: 2rem;
   border-radius: 1rem;
   width: 35vw;
-  background-color: brown;
+  background-color:#e48900;
   font-size: 1rem;
   padding:0 1rem;
 }
