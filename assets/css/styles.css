@@ -224,10 +224,10 @@ a.nav__logo{
     color: var(--text-color);
 }
 .home__img{
-    position: absolute;
+    position:absolute;
     right: 0;
     bottom: 0;
-    width: 295px;
+    width: 100%;
 }
 
 /* ===== ABOUT =====*/
@@ -246,13 +246,13 @@ a.nav__logo{
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    width: 400px;
-    height: 300px;
+    width: 50%;
+    height: 60%;
     border-radius: 1%;
     overflow: hidden;
 }
 img{
-    width: 500px;
+    width: 100%;
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
@@ -271,11 +271,11 @@ p.about__text{
     margin-bottom: var(--mb-4);
 }
 .about__social-icon{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0 var(--mb-4);
 }
 .about__social-icon:hover{
-    color: var(--first-color);
+  color: goldenrod
 }
 
 /* ===== SKILLS =====*/
@@ -420,11 +420,12 @@ a.footer__social{
 /* For small devices */
 @media screen and (max-width: 320px) {
   .home__img {
-    width: 230px;
+    width: 28%;
   }
 }
 
 @media screen and (min-width: 768px){
+
     body{
         margin: 0;
     }
@@ -467,10 +468,11 @@ a.footer__social{
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }
-    .home__img{
-        width: 524px;
-        right: 10%;
+     .home__img {
+        width: 28%;
+        right: 5%;
     }
+}
 
     .about__container{
         grid-template-columns: repeat(2, 1fr);
@@ -479,11 +481,11 @@ a.footer__social{
         padding: 4rem 0;
     }
     .about__img{
-        width: 60%;
+        width: 80%;
         height: 60%;
     }
     .about__img img{
-        width: 400px;
+        width: 80%;
     }
 
     .skills__container{
@@ -509,23 +511,24 @@ a.footer__social{
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
-}
+
 
 @media screen and (min-width: 1024px){
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
     }
-}
+
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
     }
+    /*------full web page ------*/
     .home__img {
-        width: 500px;
-        right: 24%;
+        width: 28%;
+        right: 15%;
     }
 }
 
@@ -598,4 +601,11 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+div.container{
+    position: relative;
+    left:-10rem;
+    display:block;
+}
 }
