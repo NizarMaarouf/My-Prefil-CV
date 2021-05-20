@@ -344,8 +344,7 @@ h3.skills__subtitle{
 }
 .skills__img img{
     border-radius: 1rem;
-    width: 30%;
-    height: auto;
+    width: 10vw;
 }
 
 /* ===== PORTFOLIO =====*/
@@ -651,22 +650,30 @@ input[type=submit]:hover {
 }
 
 /* skills section styling */
+.skills{
+    padding:4rem 0;
 
+}
+h2.title{
+    font-size: 1.6rem;
+    margin-bottom: -0.2rem;
+    padding: 0 0.2rem;
+}
 .skills-content .bars {
-  margin: 1rem;
+  margin: 0.1rem;
 }
 .info {
   display: flex;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   align-items: center;
   justify-content: space-between;
 }
  .right span {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .right .line {
-  height: 0.8rem;
+  height: 0.5rem;
   width: 100%;
   background: lightgrey;
   position: relative;
