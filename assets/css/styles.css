@@ -7,7 +7,7 @@
     --font-medium: 500;
 }
 
-/*===== Colores =====*/
+/*===== Colorers =====*/
 :root{
     --first-color:#d9dadc;
     --white-color: #99bbad;
@@ -89,6 +89,12 @@ img{
 }
 
 /*===== CLASS CSS ===== */
+.max-width {
+  max-width: 150rem;
+  padding: 0 1rem;
+  margin: 0 30rem;
+}
+
 .section{
     padding: 3rem 0;
 }
@@ -110,6 +116,36 @@ img{
     top: 2rem;
     background-color: var(--first-color);
 }
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
 
 /*===== LAYOUT =====*/
 .bd-grid{
@@ -307,7 +343,9 @@ h3.skills__subtitle{
     color: var(--white-color);
 }
 .skills__img img{
-    border-radius: .5rem;
+    border-radius: 1rem;
+    width: 30%;
+    height: auto;
 }
 
 /* ===== PORTFOLIO =====*/
@@ -415,6 +453,8 @@ a.footer__social{
 .footer__social:hover{
     color: var(--first-color);
 }
+
+
 
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
@@ -603,9 +643,64 @@ input[type=submit]:hover {
   }
 }
 
-div.container{
+.container{
     position: relative;
     left:-10rem;
     display:block;
 }
+}
+
+/* skills section styling */
+
+.skills-content .bars {
+  margin: 1rem;
+}
+.info {
+  display: flex;
+  margin-bottom: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+}
+ .right span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.right .line {
+  height: 0.8rem;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0rem;
+  top: 0;
+  background: var(--white-color);
+
+}
+.skills-content .right .html::before {
+  width: 90%;
+}
+.skills-content .right .css::before {
+  width: 88%;
+}
+.skills-content .right .js::before {
+  width: 80%;
+}
+.skills-content .right .react::before {
+  width: 72%;
+}
+.skills-content .right .node::before {
+  width: 70%;
+}
+.skills-content .right .mongo::before {
+  width: 70%;
+}
+.skills-content .right .c::before {
+  width: 100%;
+}
+.skills-content .right .cc::before {
+  width: 90%;
 }
