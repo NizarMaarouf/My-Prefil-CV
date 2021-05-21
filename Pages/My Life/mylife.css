@@ -96,15 +96,15 @@ h1 {
   border-radius: 15px;
 }
 .selectImages {
-  left: 31.5%;
+  left: 31.2%;
   position: relative;
-  top: 1rem;
+  top: 0.5rem;
   height: 2rem;
-  border-radius: 1rem;
-  width: 35vw;
+  border-radius: 0.5rem;
+  width: 36vw;
   background-color:#e48900;
-  font-size: 1rem;
-  padding:0 1rem;
+  font-size: 1.6rem;
+  padding:0.3rem 0.5rem;
 }
 .imageSelector {
   margin: 0.5rem 0.05rem;
