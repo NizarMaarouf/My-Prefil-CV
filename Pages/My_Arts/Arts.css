@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: inherit;
 }
+body{
+    background-color:#9a8194;
+}
 
 .gallery {
     display: grid;
@@ -115,14 +118,34 @@ img {
     height: 100%;
 }
 button {
-  margin: 0.2rem 3rem;
-  background-color: #e48900;
-  padding: 0.3rem 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-  border-radius: 1rem;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5rem 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+button:hover {
+  background-color: #907fa4;
+  color: white;
 }
 a {
  text-decoration: none;
-color: ;
+
+}
+a:hover {
+ text-decoration: none;
+  color: white;
 }
