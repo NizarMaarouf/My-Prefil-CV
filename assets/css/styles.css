@@ -487,7 +487,7 @@ img{
 }
 
 /* For tall screens on mobiles y desktop*/
-@media screen and (min-height: 900px) {
+@media screen and (min-height: 880px) {
     .home__container {
         height: 35vw;
     }
