@@ -30,7 +30,7 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 70;
     sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -78,4 +78,3 @@ sr.reveal(".contact__subtitle", {});
 sr.reveal(".contact__text", { interval: 200 });
 sr.reveal(".contact__input", { delay: 400 });
 sr.reveal(".contact__button", { delay: 600 });
-
