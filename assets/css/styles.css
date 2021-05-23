@@ -493,12 +493,12 @@ img{
     }
     .home__img {
         width: 50%;
-        height: 90%;
+        height: 70%;
         right: 2%;
     }
 .home__title{
     position: relative;
-    font-size:12rem;
+    font-size:10rem;
     top:3rem;
 }
 }
