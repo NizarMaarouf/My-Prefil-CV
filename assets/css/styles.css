@@ -13,6 +13,8 @@
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
+    --text-color2:#e5e5e5;
+    --dark-color2:#ec9b3b;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -77,6 +79,23 @@ img{
     height: auto;
     display: block;
 }
+    button {
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5rem 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color:#5361FF;
+}
+
+button:hover {
+  background-color: #ffc93c;
+}
 
 /*===== CLASS CSS ===== */
 .section{
@@ -85,7 +104,7 @@ img{
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
-    color: var(--dark-color);
+    color: var(--dark-color2);
     margin: var(--mb-4) 0;
     text-align: center;
 }
@@ -252,7 +271,7 @@ img{
     row-gap: 2rem;
 }
 .skills__subtitle{
-    color: var(--first-color);
+    color: var(--text-color2);
     margin-bottom: var(--mb-3);
 }
 .skills__name{
@@ -261,12 +280,12 @@ img{
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: .25rem .5rem;
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     border-radius: .25rem;
 }
 .skills__name:hover{
     background-color: var(--first-color);
-    color: var(--white-color);
+    color: var(--text-color2);
 }
 .skills__img img{
     border-radius: .5rem;
@@ -349,28 +368,29 @@ img{
 
 /* ===== FOOTER=====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color: var(--dark-color2);
+    color: var(--text-color);
 }
 .footer__container{
     row-gap: 2rem;
 }
 .footer__title{
     font-size: var(--normal-font-size);
-    color: var(--white-color);
+    color: var(--text-color2);
     margin-bottom: var(--mb-2);
 }
 .footer__link{
     padding: .25rem 0;
 }
 .footer__link:hover{
-    color: var(--first-color);
+    color: var(--text-color2);
 }
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
 }
 .footer__social:hover{
-    color: var(--first-color);
+    color: var(--text-color2);
 }
 
 /* ===== MEDIA QUERIES =====*/
@@ -447,12 +467,31 @@ img{
         padding: 4rem 0;
     }
     .about__img{
-        width: 200px;
-        height: 200px;
+        width: 55%;
+        height: 70%;
     }
     .about__img img{
-        width: 165px;
+        width: 80%;
     }
+    button {
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5rem 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color:#5361FF;
+  color:#FAFAFF;
+}
+
+button:hover {
+  background-color: #ffc93c;
+  color:#0a0000;
+}
 
     .skills__container{
         grid-template-columns: repeat(2, 1fr);
@@ -506,13 +545,16 @@ img{
 
 /* skills section styling */
 .skills{
-    background-color: var(--skills-color);
+    background-color: #226597;
     padding:5rem 4rem;
-
+     color: var(--text-color2)
 }
 h2.title{
+    color: var(--text-color)
+    position: relative;
+    text-align: center;
     font-size: 1.6rem;
-    margin-bottom: -0.2rem;
+    margin-bottom: -1rem;
     padding: 0 0.2rem;
 }
 .skills-content .bars {
@@ -540,7 +582,7 @@ h2.title{
   height: 100%;
   left: 0rem;
   top: 0;
-  background: #ff8303;
+  background: #eac100;
 
 }
 .skills-content .right .html::before {
