@@ -310,7 +310,7 @@ section {
 # Facts
 --------------------------------------------------------------*/
 .facts {
-  margin: -4.3rem;
+  margin: 0rem;
   padding-bottom: 0.2rem;
 }
 
@@ -366,9 +366,9 @@ section {
 
 .contact .info {
   padding: 1.9rem;
-  background: #2d6187;
+  background: #5361FF;
   width: 100%;
-  height: 55%;
+  height: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -398,7 +398,7 @@ section {
   padding: 0 0 0.5rem 4rem;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
-  color: #fecd1a;
+  color: #ddd;
 }
 
 .contact .info .email p {
@@ -442,7 +442,7 @@ label{
 .contact .php-email-form {
   width: 100%;
   padding: 2rem;
-  background: #2d6187;
+  background: #5361FF;
   box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -551,13 +551,13 @@ label{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
+  padding: 1rem;
   color: #f4f6fd;
-  font-size: 14px;
+  font-size: 1rem;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 2rem;
   z-index: 9999;
   background: #040b14;
 }
@@ -567,7 +567,7 @@ label{
 }
 
 #footer .credits {
-  padding-top: 5px;
+  padding-top: 0.35rem;
   text-align: center;
   font-size: 13px;
   color: #eaebf0;
@@ -577,6 +577,6 @@ label{
   #footer {
     position: static;
     width: auto;
-    padding-right: 20px 15px;
+    padding-right: 1rem 0.9rem;
   }
 }

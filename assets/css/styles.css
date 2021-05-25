@@ -9,12 +9,13 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #5361FF;
+   --first-color: #5361FF;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
     --text-color2:#e5e5e5;
     --dark-color2:#ec9b3b;
+    --body-color:#ffe227;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -55,6 +56,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    background-color: var(--body-color);
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -79,7 +81,7 @@ img{
     height: auto;
     display: block;
 }
-    button {
+	    button {
   border: none;
   padding: 1rem 2rem;
   text-align: center;
@@ -104,7 +106,7 @@ button:hover {
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
-    color: var(--dark-color2);
+    color: var(--dark-color);
     margin: var(--mb-4) 0;
     text-align: center;
 }
@@ -268,6 +270,7 @@ button:hover {
 
 /* ===== SKILLS =====*/
 .skills__container{
+    background-color: var(--first-color);
     row-gap: 2rem;
 }
 .skills__subtitle{
@@ -280,12 +283,13 @@ button:hover {
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: .25rem .5rem;
-    background-color: var(--dark-color);
+    background-color: var(--white-color);
     border-radius: .25rem;
 }
 .skills__name:hover{
-    background-color: var(--first-color);
-    color: var(--text-color2);
+    background-color: var(--dark-color2);
+    color: var(--white-color);
+    cursor: pointer;
 }
 .skills__img img{
     border-radius: .5rem;
@@ -369,28 +373,27 @@ button:hover {
 /* ===== FOOTER=====*/
 .footer{
     background-color: var(--dark-color2);
-    color: var(--text-color);
 }
 .footer__container{
     row-gap: 2rem;
 }
 .footer__title{
     font-size: var(--normal-font-size);
-    color: var(--text-color2);
+    color: var(--white-color);
     margin-bottom: var(--mb-2);
 }
 .footer__link{
     padding: .25rem 0;
 }
 .footer__link:hover{
-    color: var(--text-color2);
+    color: var(--first-color);
 }
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
 }
 .footer__social:hover{
-    color: var(--text-color2);
+    color: var(--first-color);
 }
 
 /* ===== MEDIA QUERIES =====*/
@@ -467,31 +470,12 @@ button:hover {
         padding: 4rem 0;
     }
     .about__img{
-        width: 55%;
-        height: 70%;
+        width: 200px;
+        height: 200px;
     }
     .about__img img{
-        width: 80%;
+        width: 165px;
     }
-    button {
-  border: none;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0.5rem 2rem;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 2rem;
-  background-color:#5361FF;
-  color:#FAFAFF;
-}
-
-button:hover {
-  background-color: #ffc93c;
-  color:#0a0000;
-}
 
     .skills__container{
         grid-template-columns: repeat(2, 1fr);
@@ -545,22 +529,22 @@ button:hover {
 
 /* skills section styling */
 .skills{
-    background-color: #226597;
+    background-color: var(--first-color);
     padding:5rem 4rem;
-     color: var(--text-color2)
+
 }
 h2.title{
-    color: var(--text-color)
-    position: relative;
+    color:#bbb;
     text-align: center;
     font-size: 1.6rem;
-    margin-bottom: -1rem;
+    margin-bottom: -0.2rem;
     padding: 0 0.2rem;
 }
 .skills-content .bars {
   margin: 0.1rem;
 }
 .info {
+    color:#bbb;
   display: flex;
   margin-bottom: 0.5rem;
   align-items: center;
@@ -571,7 +555,7 @@ h2.title{
   font-size: 1rem;
 }
 .right .line {
-  height: 0.5rem;
+  height: 1rem;
   width: 100%;
   background: lightgrey;
   position: relative;
@@ -582,7 +566,7 @@ h2.title{
   height: 100%;
   left: 0rem;
   top: 0;
-  background: #eac100;
+  background: #ffe603;
 
 }
 .skills-content .right .html::before {
