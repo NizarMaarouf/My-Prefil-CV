@@ -209,7 +209,7 @@ button:hover {
 .home__title{
     align-self: flex-end;
     font-size: var(--big-font-size);
-    color: var(--white-color);
+    color: var(--dark-color2);
     line-height: .8;
 }
 .home__title span{
