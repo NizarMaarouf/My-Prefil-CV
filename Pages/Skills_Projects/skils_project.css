@@ -134,7 +134,7 @@ a{
         display: flex;
     }
     .nav__item{
-        margin-left: var(--mb-4);
+        margin-left: var(--mb-2);
         margin-bottom: 0;
     }
     .nav__toggle{
@@ -201,13 +201,13 @@ a{
 
 .about__social-icon{
   position: relative;
-  left: 40%;
-  bottom:20rem;
+  left: 2%;
+  bottom:1rem;
   font-size: 1.8rem;
-  margin: 0 var(--mb-2);
+  margin: 0 var(--mb-1);
   color: var(--home-title-color);
 }
 #contact.contact.section{
-    height:89vh;
+    height:20%;
 
 }
