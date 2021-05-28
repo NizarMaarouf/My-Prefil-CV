@@ -53,7 +53,7 @@ p {
 	letter-spacing: 0.2rem;
 	text-align: center;
 	position: relative;
-	margin-bottom: 10rem;
+	margin-bottom: 8rem;
 }
 .section-heading::before {
 	content: attr(data-outline);
@@ -170,15 +170,17 @@ p {
 	box-shadow: -6px 0px 29px 7px #000000a3;
 }
 #nav-content .section-heading {
-	font-size: 4rem;
+	font-size: 3rem;
 	text-align:center;
 }
 #nav-content .section-heading::before {
 	content: 'Menu';
 	text-align: center;
-	-webkit-text-stroke: 1.4px #afadad25;
+	-webkit-text-stroke: 0.5rem #afadad25;
 }
 #nav-content .wrapper {
+	top: 5rem;
+	left:2rem;
 	width: 100%;
 	position: relative;
 }
@@ -187,7 +189,7 @@ p {
 	text-align: center;
 }
 #nav-content ul li {
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 #nav-content ul li a {
 	font-size: 2rem;
@@ -202,7 +204,7 @@ p {
 	pointer-events: none;
 	position: absolute;
 	right: 0rem;
-	bottom: 50%;
+	bottom: 40%;
 	width: 30%;
 	color: transparent;
 	-webkit-text-stroke: 1.5px #afadad25;
@@ -219,12 +221,12 @@ p {
 }
 #nav-content .close-btn {
 	position: absolute;
-	left: 10px;
-	top: 10px;
-	color: white;
-	width: 40px;
-	height: 40px;
-	background-color: var(--primary-color);
+	left: 1rem;
+	top: 1rem;
+	color: red;
+	width: 3rem;
+	height: 3rem;
+	background-color: var(--body-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -257,10 +259,10 @@ p {
 		text-align: left;
 	}
 	#nav-content nav ul li a {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	#nav-content .wrapper {
-		width: 80%;
+		width: 95%;
 	}
 }
 
