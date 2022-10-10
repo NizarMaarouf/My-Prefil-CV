@@ -9,7 +9,7 @@
 
 /*===== Colorers =====*/
 :root{
-    --first-color:#5361FF;;
+    --first-color:#1746A2;;
     --white-color: #99bbad;
     --dark-color: #9a8194;
     --text-color : #555555;
@@ -20,7 +20,7 @@
     --home-title-color:#ffd9007c;
     --button-color:#04AA6D;
     --skills-color:#23689b;
-    --skills-text:#ffd700;
+    --skills-text:#FDFF00;
     --contact-body:#4b778d;
     --primary-color: #5924ed;
 	--secondary-black: #0d081a;
@@ -303,10 +303,10 @@ h1.home__title{
     row-gap: 2rem;
 }
 .skills__subtitle ,h3.skills__subtitle{
-    font-size: 1.1rem;
+    font-size: 2rem;
     width: 100%;
     color: var(--body-color1);
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--mb-2);
 }
 .skills__name{
     display: inline-block;
@@ -323,7 +323,9 @@ h1.home__title{
     cursor: pointer;
 }
 .skills__img img{
-    border-radius: .5rem;
+    width: 20rem;
+    margin-left: 42rem;
+    border-radius: 1rem;
 }
 
 /* ===== PORTFOLIO =====*/
@@ -592,10 +594,11 @@ top:-0.6rem;
 }
 }
 /*---------END MEDIA------------*/
+
 /* skills section styling */
 .skills{
     background-color: var(--first-color);
-    padding:5rem 4rem;
+    padding:1rem 4rem;
 
 }
 h2{
@@ -642,14 +645,20 @@ h2{
   width: 90%;
 }
 .skills-content .right .css::before {
-  width: 88%;
+  width: 85%;
 }
 .skills-content .right .js::before {
-  width: 80%;
+  width: 88%;
 }
-.skills-content .right .react::before {
-  width: 72%;
+.skills-content .right .python::before {
+  width: 82%;
 }
+.skills-content .right .dart::before {
+    width: 91%;
+  }
+  .skills-content .right .flutter::before {
+    width: 85%;
+  }
 .skills-content .right .node::before {
   width: 70%;
 }
@@ -660,7 +669,7 @@ h2{
   width: 100%;
 }
 .skills-content .right .cc::before {
-  width: 90%;
+  width: 80%;
 }
 
 /*------about button-------*/
